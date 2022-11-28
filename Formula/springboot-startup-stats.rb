@@ -10,7 +10,7 @@ class SpringbootStartupStats < Formula
 
   def install
     system "./gradlew", "-PinstallPrefix=#{prefix}", "installDist"
-    rm "#{prefix}/bin/*.bat"
+    rm "#{prefix}/bin/springboot-startup-stats.bat"
   end
 
   test do
